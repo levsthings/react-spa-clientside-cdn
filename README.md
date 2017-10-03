@@ -2,12 +2,14 @@
 
 ## Introduction
 
-This is a client-side React boilerplate that can be built and pushed to a CDN or to any static hosting solution. If don't want to serve your static files on a managed solution and want full control, check [react-spa-clientside][https://github.com/ShippableBoilerplates/react-spa-clientside] instead.
+This is a client-side React boilerplate that can be built and pushed to a CDN or to any static hosting solution like Surge, S3 etc... 
+
+If don't want to serve your static files on a managed solution and want full control of your front-end infrastructure, check [react-spa-clientside](https://github.com/ShippableBoilerplates/react-spa-clientside) instead.
 
 ## The Stack
 
 - React/Redux/Redux-Saga for UI.
-- Glamor as a css-in-js solution.
+- Glamor as a CSS-in-JS solution.
 - Pug for generating HTML.
 
 ## Usage
