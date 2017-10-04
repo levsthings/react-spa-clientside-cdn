@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../src/js/components/Header/Header'
+import Header from '../../src/js/components/Header/Header'
 
 import { configure } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
