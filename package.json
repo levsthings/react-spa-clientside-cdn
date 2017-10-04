@@ -15,7 +15,7 @@
     "serve": "static public",
     "lint": "eslint --fix ./src/ --color",
     "test": "yarn lint",
-    "jest-test": "jest --coverage"
+    "jest-test": "jest"
   },
   "engines": {
     "node": "8.6.0",
