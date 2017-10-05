@@ -19,9 +19,9 @@
   },
   "jest": {
     "transform": {
-      "\\.(js)$": "<rootDir>/transformer.js",
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/transformer.js",
-      "\\.(css|less|sass|scss)$": "<rootDir>/transformer.js"
+      "\\.(js)$": "<rootDir>/.transformer.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/.transformer.js",
+      "\\.(css|less|sass|scss)$": "<rootDir>/.transformer.js"
     }
   },
   "engines": {
@@ -69,7 +69,6 @@
     "redux-devtools-extension": "^2.13.2",
     "redux-mock-store": "^1.3.0",
     "redux-saga": "^0.15.6",
-    "regenerator-runtime": "^0.11.0",
     "rimraf": "^2.6.2",
     "webpack": "^3.6.0",
     "webpack-dev-server": "^2.8.2"
@@ -77,7 +76,6 @@
   "dependencies": {
     "chai": "^4.1.2",
     "enzyme": "^3.1.0",
-    "enzyme-adapter-react-15": "^1.0.1",
     "jest": "^21.2.1",
     "react-test-renderer": "^16.0.0"
   }
