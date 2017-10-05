@@ -17,10 +17,11 @@
     "test": "yarn lint",
     "jest-test": "jest --coverage"
   },
-  "jest": { "moduleNameMapper":
-    {
-      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$":
-       "<rootDir>/assetsTransformer.js", "\\.(css|less)$": "<rootDir>/assetsTransformer.js"
+  "jest": {
+    "transform": {
+      "\\.(js)$": "<rootDir>/transformer.js",
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/transformer.js",
+      "\\.(css|less|sass|scss)$": "<rootDir>/transformer.js"
     }
   },
   "engines": {
@@ -74,9 +75,6 @@
     "webpack-dev-server": "^2.8.2"
   },
   "dependencies": {
-    "babel-jest": "^21.2.0",
-    "babel-preset-es2015": "^6.24.1",
-    "babel-preset-stage-0": "^6.24.1",
     "chai": "^4.1.2",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-15": "^1.0.1",

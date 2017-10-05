@@ -19,6 +19,9 @@ const devPlugins = [
         }
     ],
     [
+        'transform-class-properties'
+    ],
+    [
         'transform-runtime',
         {
             helpers: false,
@@ -48,7 +51,10 @@ module.exports = {
     dev: {
         plugins: devPlugins
     },
+    test: {
+        plugins: devPlugins
+    },
     prod: {
         plugins: prodPlugins
-    }
+    },
 }
