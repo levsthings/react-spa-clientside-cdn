@@ -14,11 +14,11 @@ class Clicker extends Component {
         joke: PropTypes.string.isRequired
     }
 
-    handleClick() {
+    handleClick () {
         const {updateClickCount, counter} = this.props
         updateClickCount(counter)
     }
-    render() {
+    render () {
         return (
             <div {...app}>
                 <div {...container}>

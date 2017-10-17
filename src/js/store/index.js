@@ -4,7 +4,7 @@ import createSagaMiddleware from 'redux-saga'
 import {dataReducer} from '../reducers'
 import rootSaga from '../sagas'
 
-export default function createStoreWithMiddleware() {
+export default function createStoreWithMiddleware () {
     const rootReducer = combineReducers({
         root: dataReducer
     })
