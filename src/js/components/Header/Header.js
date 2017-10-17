@@ -17,7 +17,7 @@ const title = css({
 })
 
 export default class Header extends PureComponent {
-    render () {
+    render() {
         return (
             <div {...header}>
                 <h1 {...title}>Ship a React SPA!</h1>

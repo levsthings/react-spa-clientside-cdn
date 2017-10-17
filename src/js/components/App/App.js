@@ -18,7 +18,7 @@ const wrapper = css({
 })
 
 export default class App extends PureComponent {
-    render () {
+    render() {
         return (
             <div {...wrapper}>
                 <Header />
