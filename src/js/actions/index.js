@@ -7,10 +7,10 @@ export default {
             payload: num
         }
     },
-    getChuckNorrisJoke: (payload) => {
+    getChuckNorrisJoke: (joke) => {
         return {
             type: ACTIONS.GET_CHUCK_NORRIS_JOKE,
-            payload
+            payload: joke
         }
     }
 }
