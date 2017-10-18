@@ -1,14 +1,24 @@
 import React from 'React'
 import {shallow} from 'enzyme'
 import {Clicker} from './Clicker'
-import {default as action} from '../../actions/'
 
-test('should render Clicker component correctly', () => {
-    const wrapper = shallow(
+let updateClickCount, wrapper
+
+beforeEach(() => {
+    updateClickCount = jest.fn()
+    wrapper = shallow(
         <Clicker
-            updateClickCount={action.updateClickCount}
+            updateClickCount={updateClickCount}
             counter={0}
             joke={''}
         />)
+})
+
+test('should render Clicker component correctly', () => {
     expect(wrapper).toMatchSnapshot()
+})
+
+test('should handle updateClickCount', () => {
+    wrapper.find('img').simulate('click')
+    expect(updateClickCount).toHaveBeenLastCalledWith(0)
 })

@@ -1,5 +1,4 @@
-import {takeEvery} from 'redux-saga'
-import {call, put} from 'redux-saga/effects'
+import {call, put, takeEvery} from 'redux-saga/effects'
 import {fetchAJoke} from '../api'
 import ACTIONS from '../constants'
 
