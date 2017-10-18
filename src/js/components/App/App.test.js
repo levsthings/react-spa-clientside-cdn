@@ -1,8 +1,8 @@
 import React from 'React'
 import {shallow} from 'enzyme'
-import Header from './Header'
+import App from './App'
 
 test('should render Header correctly', () => {
-    const wrapper = shallow(<Header />)
+    const wrapper = shallow(<App />)
     expect(wrapper).toMatchSnapshot()
 })
