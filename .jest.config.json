@@ -13,5 +13,8 @@
     ],
     "collectCoverageFrom": ["src/js/**/*.{js|jsx}"],
     "coverageDirectory": "<rootDir>/coverage/",
-    "moduleDirectories": ["node_modules", "src"]
+    "modulePaths": [
+        "<rootDir>/src",
+        "<rootDir>/node_modules"
+    ]
 }
