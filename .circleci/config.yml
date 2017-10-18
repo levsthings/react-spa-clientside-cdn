@@ -15,7 +15,4 @@ jobs:
                     - node_modules
             - run: yarn global add coveralls
             - run: yarn lint
-            - run: yarn test
-notify:
-    webhooks:
-        - url: https://coveralls.io/webhook?repo_token=$COVERALLS_REPO_TOKEN
+            - run: yarn test && cat ./coverage/lcov.info | coveralls
