@@ -13,7 +13,7 @@ jobs:
                 key: 'yarn-cache-{{ checksum "yarn.lock" }}'
                 paths:
                     - node_modules
-            - run: yarn add coveralls
+            - run: yarn global add coveralls
             - run: yarn lint
             - run: yarn test && cat ./coverage/lcov.info | coveralls
 notify:
