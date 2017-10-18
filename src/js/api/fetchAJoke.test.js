@@ -1,5 +1,5 @@
 import 'babel-polyfill'
-import fetchAJoke from './fetchAjoke'
+import {fetchAJoke} from './'
 
 test('Should fetch a joke', async () => {
     const data = await fetchAJoke()
