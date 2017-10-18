@@ -1,6 +1,5 @@
 <h1 align='center'>Ship A Client-Side React SPA</h1>
 
-
 [![CircleCI](https://img.shields.io/circleci/project/github/ShippableBoilerplates/react-spa-clientside-cdn.svg?style=flat-square)](https://circleci.com/gh/ShippableBoilerplates/react-spa-clientside-cdn)
 [![Coveralls](https://img.shields.io/coveralls/ShippableBoilerplates/react-spa-clientside-cdn.svg?style=flat-square)](https://coveralls.io/github/ShippableBoilerplates/react-spa-clientside-cdn)
 [![Gemnasium](https://img.shields.io/gemnasium/ShippableBoilerplates/react-spa-clientside-cdn.svg?style=flat-square)](https://gemnasium.com/github.com/ShippableBoilerplates/react-spa-clientside-cdn)
@@ -18,7 +17,8 @@ If you don't want to serve your static files on a managed solution and want full
 
 - React/Redux/Redux-Saga for UI.
 - Glamor as a CSS-in-JS solution.
-- Pug for generating static HTML assets.
+- Pug for generating static HTML.
+- Jest & Enzyme for simple unit testing, without mocks.
 
 ## Usage
 
@@ -65,5 +65,5 @@ The compiled assets will be in the public folder. You can upload them to a CDN a
 ### Additional Commands:
 
 - Run `yarn lint` for linting with auto fixing:
-- Run `yarn test` for testing. (Right now it just runs linting, you should add your test runner there.)
+- Run `yarn test` for testing.
 - Run `yarn cleanup` to manually remove built assets.
