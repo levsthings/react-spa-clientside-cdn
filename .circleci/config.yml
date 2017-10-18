@@ -13,9 +13,9 @@ jobs:
                 key: 'yarn-cache-{{ checksum "yarn.lock" }}'
                 paths:
                     - node_modules
-            - run: yarn add coveralls && cat ./coverage/lcov.info | coveralls
+            - run: yarn add coveralls
             - run: yarn lint
-            - run: yarn test 
+            - run: yarn test && cat ./coverage/lcov.info | coveralls
 notify:
     webhooks:
         - url: https://coveralls.io/webhook?repo_token=$COVERALLS_REPO_TOKEN
