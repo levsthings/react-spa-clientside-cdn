@@ -10,5 +10,7 @@
     "setupFiles": [
         "raf/polyfill",
         "<rootDir>/.setupTests.js"
-    ]
+    ],
+    "collectCoverageFrom": ["src/js/**/*.{js|jsx}"],
+    "coverageDirectory": "<rootDir>/coverage/"
 }
