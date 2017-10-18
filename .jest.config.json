@@ -12,5 +12,6 @@
         "<rootDir>/.setupTests.js"
     ],
     "collectCoverageFrom": ["src/js/**/*.{js|jsx}"],
-    "coverageDirectory": "<rootDir>/coverage/"
+    "coverageDirectory": "<rootDir>/coverage/",
+    "moduleDirectories": ["node_modules", "src"]
 }
