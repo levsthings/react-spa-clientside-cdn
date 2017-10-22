@@ -1,5 +1,6 @@
 ## editor settings
 .vscode
+.arch
 
 ## dependencies
 node_modules
