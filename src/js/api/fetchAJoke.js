@@ -1,7 +1,7 @@
 import fetch from 'isomorphic-fetch'
 
 export default function fetchAjoke() {
-    return fetch('http://api.icndb.com/jokes/random')
+    return fetch('https://hebgae6thk.execute-api.us-east-2.amazonaws.com/dev/random-fact')
         .then(res => res.json())
-        .then(res => res.value.joke)
+        .then(res => res.joke.fact)
 }
