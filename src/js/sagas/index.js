@@ -4,8 +4,11 @@ import ACTIONS from '../constants'
 
 function* getChuckNorrisJokeAsync(action) {
     try {
-        const joke = yield call(fetchAJoke)
-        yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: joke})
+        const apiCall = yield call(fetchAJoke)
+        if (apiCall.status === 200) {
+            const data = yield apiCall.json()
+            yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: data.joke.fact})
+        }
     } catch (error) {
         yield put({type: ACTIONS.GET_CHUCK_NORRIS_JOKE, payload: 'Unable to fetch a joke from the public API'})
     }
