@@ -15,4 +15,4 @@ jobs:
                     - node_modules
             - run: yarn global add coveralls
             - run: yarn lint
-            - run: yarn test && cat ./coverage/lcov.info | coveralls
+            - run: yarn test && cat ./coverage/lcov.info | coveralls | codeclimate
