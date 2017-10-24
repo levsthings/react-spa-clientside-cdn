@@ -67,6 +67,7 @@ module.exports = {
     },
     devServer: {
         contentBase: path.join(__dirname, '/'),
+        historyApiFallback: true,
         compress: true,
         hot: true,
         inline: true,
@@ -75,7 +76,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Somnolence',
+            title: 'Ship a React SPA',
             hash: true,
             filename: 'index.html',
             template: './src/templates/index.pug',
