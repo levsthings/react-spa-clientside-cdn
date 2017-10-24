@@ -16,6 +16,6 @@ test('the async saga should yield the API call', () => {
     const gen = getChuckNorrisJokeAsync()
     const nextStep = gen.next().value
     const expectedYield = call(fetchAJoke)
-    
+
     expect(nextStep).toEqual(expectedYield)
 })
