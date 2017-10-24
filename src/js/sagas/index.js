@@ -2,7 +2,7 @@ import {call, put, takeEvery} from 'redux-saga/effects'
 import {fetchAJoke} from '../api'
 import ACTIONS from '../constants'
 
-function* getChuckNorrisJokeAsync(action) {
+export function* getChuckNorrisJokeAsync() {
     try {
         const apiCall = yield call(fetchAJoke)
         if (apiCall.status === 200) {
@@ -14,7 +14,7 @@ function* getChuckNorrisJokeAsync(action) {
     }
 }
 
-function* watchClick() {
+export function* watchClick() {
     yield takeEvery(ACTIONS.UPDATE_CLICK_COUNT, getChuckNorrisJokeAsync)
 }
 
