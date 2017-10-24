@@ -11,7 +11,7 @@
         "raf/polyfill",
         "<rootDir>/.setupTests.js"
     ],
-    "collectCoverageFrom": ["src/js/**/*.{js|jsx}"],
+    "collectCoverageFrom": ["src/js/**/*.{js|jsx}", "!src/**/*.styles.js"],
     "coverageDirectory": "<rootDir>/coverage/",
     "modulePaths": [
         "<rootDir>/src",
