@@ -39,7 +39,7 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-2": "^6.24.1",
-    "copy-webpack-plugin": "^4.1.0",
+    "copy-webpack-plugin": "^4.2.0",
     "enzyme": "^3.1.0",
     "enzyme-adapter-react-16": "^1.0.2",
     "enzyme-to-json": "^3.1.4",
@@ -52,7 +52,7 @@
     "husky": "^0.14.3",
     "image-webpack-loader": "^3.4.0",
     "jest": "^21.2.1",
-    "lint-staged": "^4.2.1",
+    "lint-staged": "^4.3.0",
     "node-static": "^0.7.10",
     "prop-types": "^15.5.10",
     "pug": "^2.0.0-rc.4",
@@ -61,7 +61,7 @@
     "redux-devtools-extension": "^2.13.2",
     "rimraf": "^2.6.2",
     "webpack": "^3.6.0",
-    "webpack-dev-server": "^2.8.2"
+    "webpack-dev-server": "^2.9.3"
   },
   "dependencies": {
     "glamor": "^2.20.40",
