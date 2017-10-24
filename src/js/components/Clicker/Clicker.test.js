@@ -19,6 +19,8 @@ test('should render Clicker component correctly', () => {
 })
 
 test('should handle updateClickCount', () => {
-    wrapper.find('img').simulate('click')
+    const image = wrapper.find('img')
+    image.simulate('click')
+    expect(updateClickCount.mock.calls.length).toBe(1)
     expect(updateClickCount).toHaveBeenLastCalledWith(0)
 })
