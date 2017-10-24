@@ -67,3 +67,4 @@ The compiled assets will be in the public folder. You can upload them to a CDN a
 - Run `yarn lint` for linting with auto fixing:
 - Run `yarn test` for testing.
 - Run `yarn cleanup` to manually remove built assets.
+
