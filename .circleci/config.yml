@@ -13,6 +13,6 @@ jobs:
                 key: 'yarn-cache-{{ checksum "yarn.lock" }}'
                 paths:
                     - node_modules
-            - run: yarn global add coveralls
+            - run: yarn global add coveralls codeclimate-test-reporter
             - run: yarn lint
             - run: yarn test && cat ./coverage/lcov.info | coveralls | codeclimate
