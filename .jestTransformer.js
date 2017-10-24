@@ -8,7 +8,7 @@ module.exports = {
             return babel.transform(src, {
                 filename,
                 presets: babelRc.presets,
-                plugins: babelRc.plugins,
+                plugins: babelRc.dev.plugins,
                 retainLines: true
             }).code
         }
