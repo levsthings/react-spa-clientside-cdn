@@ -1,3 +1,5 @@
+# You can use the following CircleCI recipe for CI/CD.
+# Just make sure that Circle is watching your repo.
 version: 2
 jobs:
     build:
@@ -15,4 +17,9 @@ jobs:
                     - node_modules
             - run: yarn global add coveralls codeclimate-test-reporter
             - run: yarn lint
+            # You change the below command to `run: yarn test` if you don't have coveralls/codeclimate integrated.
             - run: yarn test && cat ./coverage/lcov.info | coveralls && cat ./coverage/lcov.info | codeclimate-test-reporter
+            # Deployment suggestion:
+            # You can build your assets on CI
+            # - run: yarn build/prod
+            # And then you can push your assets to your static hosting provider like S3
