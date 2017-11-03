@@ -1,20 +1,18 @@
 {
-    "name": "react-spa-client-clientside-cdn",
-    "description": "client",
+    "name": "react-spa-clientside-cdn",
+    "description": "Ship A Client-Side React SPA",
     "version": "1.0.0",
     "author": "levsthings",
     "license": "MIT",
     "repository": {
         "type": "git",
-        "url":
-            "https://github.com/ShippableBoilerplates/react-spa-client-clientside-cdn"
+        "url": "https://github.com/ShippableBoilerplates/react-spa-client-clientside-cdn"
     },
     "scripts": {
         "precommit": "lint-staged",
         "cleanup": "rimraf ./public",
         "dev": "webpack-dev-server --config ./webpack.config.dev.js --progress",
-        "build/prod":
-            "yarn cleanup && webpack --config ./webpack.config.prod.js",
+        "build/prod": "yarn cleanup && webpack --config ./webpack.config.prod.js",
         "serve": "static public",
         "lint": "eslint --fix ./src/ --color",
         "test": "jest --config=.jest.config.json --coverage",
